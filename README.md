@@ -1,3 +1,6 @@
+# magic-react-nodegui
+Allow me to count the life points of my opponent and myself when we play magic, or Yu gi oh and other card games.
+
 # react-nodegui-starter
 
 **Clone and run for a quick way to see React NodeGui in action.**

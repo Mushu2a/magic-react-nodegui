@@ -10,7 +10,11 @@ module.exports = (env, argv) => {
     target: "node",
     output: {
       path: path.resolve(__dirname, "dist"),
-      filename: "index.js"
+      filename: "index.js",
+    },
+    node: {
+      __dirname: false,
+      __filename: false,
     },
     module: {
       rules: [
@@ -19,33 +23,33 @@ module.exports = (env, argv) => {
           exclude: /node_modules/,
           use: {
             loader: "babel-loader",
-            options: { cacheDirectory: true, cacheCompression: false }
-          }
+            options: { cacheDirectory: true, cacheCompression: false },
+          },
         },
         {
           test: /\.(png|jpe?g|gif|svg|bmp|otf)$/i,
           use: [
             {
               loader: "file-loader",
-              options: { publicPath: "dist" }
-            }
-          ]
+              options: { publicPath: "dist" },
+            },
+          ],
         },
         {
           test: /\.node/i,
           use: [
             {
               loader: "native-addon-loader",
-              options: { name: "[name]-[hash].[ext]" }
-            }
-          ]
-        }
-      ]
+              options: { name: "[name]-[hash].[ext]" },
+            },
+          ],
+        },
+      ],
     },
     plugins: [new CleanWebpackPlugin()],
     resolve: {
-      extensions: [".tsx", ".ts", ".js", ".jsx", ".json"]
-    }
+      extensions: [".tsx", ".ts", ".js", ".jsx", ".json"],
+    },
   };
 
   if (argv.mode === "development") {
