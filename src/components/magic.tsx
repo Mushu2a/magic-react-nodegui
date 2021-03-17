@@ -75,6 +75,7 @@ function Magic(props: any) {
             id="input"
             text={namePlayer1}
             placeholderText="Joueur 1"
+            style={`border: 4px solid #52C8FE;`}
             on={{
               textChanged: (value) => setNamePlayer1(value),
             }}
@@ -106,7 +107,7 @@ function Magic(props: any) {
 
             <LineEdit
               id="rect"
-              style={`font-size: ${fontSizeP1}px;`}
+              style={`font-size: ${fontSizeP1}px; border: 4px solid #52C8FE;`}
               text={countP1.toString()}
               on={{
                 textChanged: (value) => handleTextChanged(value ? value : 0, 1),
@@ -142,6 +143,7 @@ function Magic(props: any) {
             id="input"
             text={namePlayer2}
             placeholderText="Joueur 2"
+            style={`border: 4px solid #FF5D92;`}
             on={{ textChanged: (value) => setNamePlayer2(value) }}
           />
 
@@ -171,7 +173,7 @@ function Magic(props: any) {
 
             <LineEdit
               id="rect"
-              style={`font-size: ${fontSizeP2}px;`}
+              style={`font-size: ${fontSizeP2}px; border: 4px solid #FF5D92;`}
               text={countP2.toString()}
               on={{
                 textChanged: (value) => handleTextChanged(value ? value : 0, 2),
