@@ -36,7 +36,7 @@ function App() {
   ]);
 
   function changeImage() {
-    const newPointer = pointer === 6 - 1 ? 0 : pointer + 1;
+    const newPointer = pointer === images.length - 1 ? 0 : pointer + 1;
     setPointer(newPointer);
   }
 
