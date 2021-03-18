@@ -14,11 +14,10 @@ import image3 from "../assets/images/3.jpg";
 import image4 from "../assets/images/4.jpg";
 import image5 from "../assets/images/5.jpg";
 
-import path from "path";
-
-const rootDir = path.resolve(__dirname, "../");
-
 // Use only if not build folder with image inside
+// import path from "path";
+
+// const rootDir = path.resolve(__dirname, "../");
 // const assetImages = path.resolve(rootDir, "assets/images");
 
 const minSize = { width: 1000, height: 500 };
@@ -49,10 +48,7 @@ function App() {
       minSize={minSize}
       maxSize={minSize}
     >
-      <Layout
-        onClick={() => changeImage()}
-        image={`${path.resolve(rootDir, `${images[pointer]}`)}`}
-      />
+      <Layout onClick={() => changeImage()} image={images[pointer]} />
     </Window>
   );
 }
