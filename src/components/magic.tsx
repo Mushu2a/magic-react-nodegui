@@ -19,7 +19,7 @@ const btnIconDownRight = new QIcon(btnDownRight);
 
 const cursor = new QCursor(13);
 
-function Magic(props: any) {
+function Magic() {
   const [namePlayer1, setNamePlayer1] = useState("");
   const [namePlayer2, setNamePlayer2] = useState("");
 
