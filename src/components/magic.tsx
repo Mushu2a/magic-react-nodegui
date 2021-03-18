@@ -8,13 +8,6 @@ import btnDownLeft from "../../assets/images/btn_triangle_bleu_down.png";
 import btnUpRight from "../../assets/images/btn_triangle_rouge_up.png";
 import btnDownRight from "../../assets/images/btn_triangle_rouge_down.png";
 
-import image0 from "../../assets/images/0.jpg";
-import image1 from "../../assets/images/1.jpg";
-import image2 from "../../assets/images/2.jpg";
-import image3 from "../../assets/images/3.jpg";
-import image4 from "../../assets/images/4.jpg";
-import image5 from "../../assets/images/5.jpg";
-
 const size = 80;
 const icon = new QSize(size, size);
 const btnSize = { width: size, height: size };
@@ -23,13 +16,6 @@ const btnIconUpLeft = new QIcon(btnUpLeft);
 const btnIconDownLeft = new QIcon(btnDownLeft);
 const btnIconUpRight = new QIcon(btnUpRight);
 const btnIconDownRight = new QIcon(btnDownRight);
-
-const pImage0 = new QIcon(image0);
-const pImage1 = new QIcon(image1);
-const pImage2 = new QIcon(image2);
-const pImage3 = new QIcon(image3);
-const pImage4 = new QIcon(image4);
-const pImage5 = new QIcon(image5);
 
 const cursor = new QCursor(13);
 
