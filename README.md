@@ -2,7 +2,7 @@
 Allow me to count the life points of my opponent and myself when we play magic, or Yu gi oh and other card games.
 
 ## Preview
-![alt preview](https://github.com/Mushu2a/magic-react-nodegui/blob/master/assets/images/preview.png)?raw=true)
+![alt preview](https://github.com/Mushu2a/magic-react-nodegui/blob/master/assets/images/preview.png)
 
 # react-nodegui-starter
 
