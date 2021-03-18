@@ -41,9 +41,6 @@ function App() {
 }
 
 const styleSheet = `
-  #container {
-    flex: 1;
-  }
   #controls {
     margin: 20px;
     position: absolute;
