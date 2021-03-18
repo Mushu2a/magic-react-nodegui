@@ -7,10 +7,19 @@ import { Layout } from "./components/index";
 
 import nodeguiIcon from "../assets/nodegui.jpg";
 
+import image0 from "../assets/images/0.jpg";
+import image1 from "../assets/images/1.jpg";
+import image2 from "../assets/images/2.jpg";
+import image3 from "../assets/images/3.jpg";
+import image4 from "../assets/images/4.jpg";
+import image5 from "../assets/images/5.jpg";
+
 import path from "path";
 
 const rootDir = path.resolve(__dirname, "../");
-const assetUrl = path.resolve(rootDir, "assets/images");
+
+// Use only if not build folder with image inside
+// const assetImages = path.resolve(rootDir, "assets/images");
 
 const minSize = { width: 1000, height: 500 };
 
@@ -18,6 +27,14 @@ const winIcon = new QIcon(nodeguiIcon);
 
 function App() {
   var [pointer, setPointer] = useState(0);
+  var [images, setImages] = useState([
+    image0,
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+  ]);
 
   function changeImage() {
     const newPointer = pointer === 6 - 1 ? 0 : pointer + 1;
@@ -34,7 +51,7 @@ function App() {
     >
       <Layout
         onClick={() => changeImage()}
-        image={`${path.resolve(assetUrl, `${pointer}.jpg`)}`}
+        image={`${path.resolve(rootDir, `${images[pointer]}`)}`}
       />
     </Window>
   );
