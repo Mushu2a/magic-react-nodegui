@@ -9,7 +9,7 @@ Prototype designer
 
 ### Task
 
-- [x] Set name player
+- [x] Set name players
 - [x] Count points (increment / decrement)
 - [x] Change background image
 - [ ] Import new image to background
