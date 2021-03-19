@@ -12,11 +12,11 @@ Prototype designer
 - [x] Set name player
 - [x] Count points (increment / decrement)
 - [x] Change background image
-- [] Import new image to background
-- [] Delete a background image
-- [] Create room (code to join)
-- [] Share code
-- [] Synchronize score between player
+- [ ] Import new image to background
+- [ ] Delete a background image
+- [ ] Create room (code to join)
+- [ ] Share code
+- [ ] Synchronize score between player
 
 # react-nodegui-starter
 
