@@ -4,6 +4,20 @@ Allow me to count the life points of my opponent and myself when we play magic, 
 ## Preview
 ![alt preview](https://github.com/Mushu2a/magic-react-nodegui/blob/master/assets/images/preview.png)
 
+Prototype designer
+[@max_tortos](https://www.instagram.com/max_tortos/)
+
+### Task
+
+- [x] Set name player
+- [x] Count points (increment / decrement)
+- [x] Change background image
+- [] Import new image to background
+- [] Delete a background image
+- [] Create room (code to join)
+- [] Share code
+- [] Synchronize score between player
+
 # react-nodegui-starter
 
 **Clone and run for a quick way to see React NodeGui in action.**
